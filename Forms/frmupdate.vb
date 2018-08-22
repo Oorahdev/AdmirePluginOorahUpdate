@@ -56,7 +56,13 @@ Public Class frmupdate
 
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Process.Start("C:\Users\lfireman\Documents\GitHub\updateAdmire\AwsConsoleApp1\bin\Debug\AwsConsoleApp1.exe")
+        Try
+            Process.Start("C:\Users\lfireman\Documents\GitHub\updateAdmire\AwsConsoleApp1\bin\Debug\AwsConsoleApp1.exe")
+        Catch ex As Exception
+            Print("Could not reach the updated files")
+        End Try
+        Dim arrargs As Object() = {host.SqlMaster.UserId}
+        host.SqlMaster.RunSql("AdmireUpdateDlls_lastUpdate", arrargs)
         Button1.Text = "Update Successful"
         Button1.ForeColor = Color.White
         Button1.BackColor = Color.MediumSeaGreen

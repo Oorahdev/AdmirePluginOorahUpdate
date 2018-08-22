@@ -16,13 +16,12 @@ Public Class AdmireUpdate
         Dim arrRet(0) As CustomModuleMenuItem
         arrRet(0) = New CustomModuleMenuItem
         arrRet(0).DelegateToRun = New admAdmireCustomModuleInterface.admICustomModule.CustomModuleMenuItemClick(AddressOf MenuItemOpenCollectorsClick)
-        'arrRet(0).Image = My.Resources.Resource1.collector
         arrRet(0).Locations = New MenuLocation() {MenuLocation.MainMenu}
         arrRet(0).Text = "Admire|Update"
         Return arrRet
     End Function
 
-    'create button to click to update - this is just a sample
+
     Public Sub MenuItemOpenCollectorsClick(ByVal sender As Object, ByVal e As CustomModuleMenuItemClickEventArgs)
         downloadDlls()
     End Sub

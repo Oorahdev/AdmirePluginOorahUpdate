@@ -112,13 +112,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\update.Designer.vb">
-      <DependentUpon>update.vb</DependentUpon>
+    <Compile Include="Forms\frmupdate.Designer.vb">
+      <DependentUpon>frmupdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="Forms\update.vb">
+    <Compile Include="Forms\frmupdate.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\updatePlugin.vb" />
+    <Compile Include="Forms\Utilities.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -136,8 +137,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\update.resx">
-      <DependentUpon>update.vb</DependentUpon>
+    <EmbeddedResource Include="Forms\frmupdate.resx">
+      <DependentUpon>frmupdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

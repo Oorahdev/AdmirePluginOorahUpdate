@@ -8,6 +8,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{FF128459-318F-4F9B-98F9-311693E1AE77}"
 	ProjectSection(SolutionItems) = preProject
 		updatePlugin.vb = updatePlugin.vb
+		Utilities.vb = Utilities.vb
 	EndProjectSection
 EndProject
 Global

@@ -1,4 +1,9 @@
 ﻿Imports Microsoft.VisualBasic
+Imports AdmireUpdate
+Imports AdmireUpdate.frmupdate
+Imports admAdmireCustomModuleInterface
+Imports adm
+Imports adm.AdmUtilities
 
 
 'move to plugins folder
@@ -6,6 +11,7 @@
 Public Class AdmireUpdate
     Inherits admAdmireCustomModuleInterface.admICustomModule
 
+    Dim frmUpdateScreen As frmupdate
     Public Overrides ReadOnly Property ModuleName() As String
         Get
             Return "AdmireUpdate"
@@ -18,7 +24,7 @@ Public Class AdmireUpdate
         arrRet(0).DelegateToRun = New admAdmireCustomModuleInterface.admICustomModule.CustomModuleMenuItemClick(AddressOf MenuItemOpenCollectorsClick)
         'arrRet(0).Image = My.Resources.Resource1.collector
         arrRet(0).Locations = New MenuLocation() {MenuLocation.MainMenu}
-        arrRet(0).Text = "Admire|Update"
+        arrRet(0).Text = "Admire|Run Update"
         Return arrRet
     End Function
 
@@ -29,7 +35,8 @@ Public Class AdmireUpdate
 
 
     Public Sub downloadDlls()
-        Dim x As update = New update
-        x.Show()
+        frmUpdateScreen = New frmupdate()
+        frmUpdateScreen.Show()
     End Sub
+
 End Class

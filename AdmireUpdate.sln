@@ -5,11 +5,6 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdmireUpdate", "AdmireUpdate.vbproj", "{66B5DD00-E741-4A84-96A5-004A507493C3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{FF128459-318F-4F9B-98F9-311693E1AE77}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\admire\Plugins\AdmireUpdate.vb = ..\..\..\..\..\admire\Plugins\AdmireUpdate.vb
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

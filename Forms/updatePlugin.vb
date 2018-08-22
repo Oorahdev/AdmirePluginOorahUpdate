@@ -11,7 +11,7 @@ Imports adm.AdmUtilities
 Public Class AdmireUpdate
     Inherits admAdmireCustomModuleInterface.admICustomModule
 
-    Dim frmUpdateScreen As frmupdate
+    'Dim frmUpdateScreen As frmupdate
     Public Overrides ReadOnly Property ModuleName() As String
         Get
             Return "AdmireUpdate"
@@ -35,8 +35,8 @@ Public Class AdmireUpdate
 
 
     Public Sub downloadDlls()
-        frmUpdateScreen = New frmupdate()
-        frmUpdateScreen.Show()
+        Dim x As frmupdate = New frmupdate(Me)
+        x.Show()
     End Sub
 
 End Class

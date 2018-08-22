@@ -7,17 +7,31 @@ Public Class frmupdate
     Public host As admAdmireCustomModuleInterface.AdmireHostParameters
     Public Plugin As AdmireUpdate
 
+    Public Sub New(admireHost As admAdmireCustomModuleInterface.AdmireHostParameters)
+        'InitializeComponent()
+        host = admireHost
+    End Sub
+
+    Public Sub New(ByVal AdmirePlugin As AdmireUpdate)
+        Try
+            InitializeComponent()
+            Plugin = AdmirePlugin
+            host = AdmirePlugin.Host
+            ' InitForm()
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+
+    End Sub
+
+
     Private Sub update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         checkForUpdate()
     End Sub
 
-    Public Sub New(admireHost As admAdmireCustomModuleInterface.AdmireHostParameters)
-        InitializeComponent()
-        host = admireHost
-    End Sub
 
-    Public Sub New()
-    End Sub
+    'Public Sub New()
+    'End Sub
 
     Private Sub checkForUpdate()
 

@@ -23,6 +23,7 @@ Partial Class frmupdate
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.HeadwayLink = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'Button1
@@ -37,18 +38,31 @@ Partial Class frmupdate
         Me.Button1.Text = "Run Update"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'HeadwayLink
+        '
+        Me.HeadwayLink.AutoSize = True
+        Me.HeadwayLink.Location = New System.Drawing.Point(76, 120)
+        Me.HeadwayLink.Name = "HeadwayLink"
+        Me.HeadwayLink.Size = New System.Drawing.Size(111, 13)
+        Me.HeadwayLink.TabIndex = 1
+        Me.HeadwayLink.TabStop = True
+        Me.HeadwayLink.Text = "View Recent Updates"
+        '
         'frmupdate
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
-        Me.ClientSize = New System.Drawing.Size(265, 133)
+        Me.ClientSize = New System.Drawing.Size(265, 155)
+        Me.Controls.Add(Me.HeadwayLink)
         Me.Controls.Add(Me.Button1)
         Me.Name = "frmupdate"
         Me.Text = "update"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Button1 As Button
+    Friend WithEvents HeadwayLink As LinkLabel
 End Class

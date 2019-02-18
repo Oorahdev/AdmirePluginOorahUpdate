@@ -52,6 +52,7 @@ Public Class frmupdate
             Button1.Text = "Up To Date"
             Button1.ForeColor = Color.White
             Button1.BackColor = Color.MediumSeaGreen
+            Button1.Enabled = False
         End If
 
     End Sub
@@ -59,9 +60,12 @@ Public Class frmupdate
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Try
-            downloadDlls()
-            ' markUpdated()
-            ' reopenAdmire()
+            ' add message box warning that admire will close and save info. Either continue or cancel.
+            Select Case MsgBox("This action will close down your Admire and lose all unsaved changes. Would you like to continue?", MsgBoxStyle.YesNo, Me.Text)
+                Case Is = MsgBoxResult.Yes
+                    downloadDlls()
+                Case Is = MsgBoxResult.No
+            End Select
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -83,30 +87,18 @@ Public Class frmupdate
         End Try
     End Sub
 
-    'Private Sub closeAdmire()
-    '    Try
-    '        Process.Start("taskkill /IM admire.exe")
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '    End Try
-    'End Sub
-
-    'Private Sub reopenAdmire()
-    '    Try
-    '        Process.Start("start /d C:\Admire admire.exe")
-    '    Catch ex As Exception
-    '        MsgBox(ex.Message)
-    '    End Try
-    'End Sub
 
 
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles HeadwayLink.LinkClicked
+        VisitLink()
+    End Sub
 
-    'Private Sub markUpdated()
-    '    Dim arrargs As Object() = {host.SqlMaster.UserId}
-    '    host.SqlMaster.RunSql("AdmireUpdateDlls_lastUpdate", arrargs)
-    '    Button1.Text = "Update Successful"
-    '    Button1.ForeColor = Color.White
-    '    Button1.BackColor = Color.MediumSeaGreen
-    'End Sub
+    Private Sub VisitLink()
+
+        Dim url As String = "https://headwayapp.co/oorah-updates"
+        HeadwayLink.LinkVisited = True
+        System.Diagnostics.Process.Start("Chrome", url)
+    End Sub
+
 
 End Class

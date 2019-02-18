@@ -22,7 +22,7 @@ Public Class AdmireUpdate
         arrRet(0) = New CustomModuleMenuItem
         arrRet(0).DelegateToRun = New admAdmireCustomModuleInterface.admICustomModule.CustomModuleMenuItemClick(AddressOf MenuItemOpenCollectorsClick)
         arrRet(0).Locations = New MenuLocation() {MenuLocation.MainMenu}
-        arrRet(0).Text = "Admire|Run Update"
+        arrRet(0).Text = "Updates|Run Admire Update"
         Return arrRet
     End Function
 

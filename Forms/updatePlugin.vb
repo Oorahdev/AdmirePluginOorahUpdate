@@ -9,6 +9,7 @@ Imports adm.AdmUtilities
 'move to plugins folder
 
 Public Class AdmireUpdate
+
     Inherits admAdmireCustomModuleInterface.admICustomModule
 
     Public Overrides ReadOnly Property ModuleName() As String

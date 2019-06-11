@@ -46,12 +46,12 @@ Public Class frmupdate
         Me.labels = labels
         If host.SqlMaster.DataTables("UpdatedDlls").Rows.Count > 0 Then
             Button1.Text = "Update Required"
-            Button1.ForeColor = Color.White
-            Button1.BackColor = Color.Red
+            Button1.ForeColor = Color.Red
+            Button1.BackColor = Color.White
         Else
             Button1.Text = "Up To Date"
-            Button1.ForeColor = Color.White
-            Button1.BackColor = Color.MediumSeaGreen
+            Button1.ForeColor = Color.MediumSeaGreen
+            Button1.BackColor = Color.White
             Button1.Enabled = False
         End If
 
@@ -89,16 +89,16 @@ Public Class frmupdate
 
 
 
-    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles HeadwayLink.LinkClicked
-        VisitLink()
-    End Sub
+    'Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
+    '    VisitLink()
+    'End Sub
 
-    Private Sub VisitLink()
+    'Private Sub VisitLink()
 
-        Dim url As String = "https://headwayapp.co/oorah-updates"
-        HeadwayLink.LinkVisited = True
-        System.Diagnostics.Process.Start("Chrome", url)
-    End Sub
+    '    Dim url As String = "https://headwayapp.co/oorah-updates"
+    '    HeadwayWebPage.LinkVisited = True
+    '    System.Diagnostics.Process.Start("Chrome", url)
+    'End Sub
 
 
 End Class

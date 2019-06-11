@@ -1,4 +1,4 @@
-﻿Imports AdmireUpdate
+Imports AdmireUpdate
 Imports adm
 Imports adm.AdmUtilities
 Imports AdmireUpdate.frmupdate
@@ -10,6 +10,6 @@ Public Class Utilities
     Public Plugin As AdmireUpdate
 
 
-    Public Delegate Function CaseDelegate(ByVal str As String)
+    Public Delegate Function CaseDelegate(ByVal str As string)
 
 End Class

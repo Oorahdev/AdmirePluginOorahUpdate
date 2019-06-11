@@ -1,0 +1,126 @@
+C:\Users\lfireman\Documents\GitHub\AdmireUpdate\Forms\frmupdate.Designer.vb
+Friend WithEvents Button1 As Button
+Changed System.Windows.Forms.Button with Telerik.WinControls.UI.RadButton
+Friend WithEvents Label1 As Label
+Changed System.Windows.Forms.Label with Telerik.WinControls.UI.RadLabel
+<System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.HeadwayWebPage = New System.Windows.Forms.WebBrowser()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Snow
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(200, 78)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Run Update"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'HeadwayWebPage
+        '
+        Me.HeadwayWebPage.Location = New System.Drawing.Point(12, 164)
+        Me.HeadwayWebPage.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.HeadwayWebPage.Name = "HeadwayWebPage"
+        Me.HeadwayWebPage.Size = New System.Drawing.Size(828, 430)
+        Me.HeadwayWebPage.TabIndex = 2
+        Me.HeadwayWebPage.Url = New System.Uri("https://headwayapp.co/oorah-updates", System.UriKind.Absolute)
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(372, 136)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(155, 25)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Recent Updates:"
+        '
+        'frmupdate
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ClientSize = New System.Drawing.Size(852, 623)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.HeadwayWebPage)
+        Me.Controls.Add(Me.Button1)
+        Me.Name = "frmupdate"
+        Me.Text = "update"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+Removed FlatStyle
+<System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.HeadwayWebPage = New System.Windows.Forms.WebBrowser()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.BackColor = System.Drawing.Color.Snow
+        Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.Button1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(200, 78)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "Run Update"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'HeadwayWebPage
+        '
+        Me.HeadwayWebPage.Location = New System.Drawing.Point(12, 164)
+        Me.HeadwayWebPage.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.HeadwayWebPage.Name = "HeadwayWebPage"
+        Me.HeadwayWebPage.Size = New System.Drawing.Size(828, 430)
+        Me.HeadwayWebPage.TabIndex = 2
+        Me.HeadwayWebPage.Url = New System.Uri("https://headwayapp.co/oorah-updates", System.UriKind.Absolute)
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.Label1.Location = New System.Drawing.Point(372, 136)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(155, 25)
+        Me.Label1.TabIndex = 3
+        Me.Label1.Text = "Recent Updates:"
+        '
+        'frmupdate
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.ClientSize = New System.Drawing.Size(852, 623)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.HeadwayWebPage)
+        Me.Controls.Add(Me.Button1)
+        Me.Name = "frmupdate"
+        Me.Text = "update"
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
+    End Sub
+Removed UseVisualStyleBackColor
+
+C:\Users\lfireman\Documents\GitHub\AdmireUpdate\Forms\updatePlugin.vb
+
+Changed System.String with string
+
+C:\Users\lfireman\Documents\GitHub\AdmireUpdate\Forms\Utilities.vb
+
+Changed System.String with string
+

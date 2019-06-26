@@ -18,7 +18,6 @@ Public Class AdmireUpdate
         arrRet(0).DelegateToRun = New admAdmireCustomModuleInterface.admICustomModule.CustomModuleMenuItemClick(AddressOf MenuItemOpenCollectorsClick)
         arrRet(0).Locations = New MenuLocation() {MenuLocation.MainMenu}
         arrRet(0).Text = "Updates|Run Admire Update"
-        arrRet(0).Text.ForeColor = Color.Red
         Return arrRet
     End Function
 
@@ -29,7 +28,14 @@ Public Class AdmireUpdate
 
 
     Public Sub downloadDlls()
+        'Dim x As update = New update
+        'x.Show()
         Dim x As update = New update
-        x.Show()
+        myform = My.Application.OpenForms(x)
+
+        If myform Is Nothing Then
+            x.Show()
+        End If
+        'My.Forms.DetailForm.Show
     End Sub
 End Class

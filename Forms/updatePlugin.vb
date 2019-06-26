@@ -34,8 +34,16 @@ Public Class AdmireUpdate
 
 
     Public Sub downloadDlls()
-        Dim x As frmupdate = New frmupdate(Me)
-        x.Show()
+
+
+        If Application.OpenForms().OfType(Of frmupdate).Any Then
+            MessageBox.Show("Form is already opened")
+        Else
+
+            Dim x As frmupdate = New frmupdate(Me)
+            x.Show()
+        End If
+
     End Sub
 
 End Class

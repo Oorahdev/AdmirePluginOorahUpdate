@@ -45,14 +45,14 @@ Public Class frmupdate
         Next
         Me.labels = labels
         If host.SqlMaster.DataTables("UpdatedDlls").Rows.Count > 0 Then
-            Button1.Text = "Update Required"
             Button1.ForeColor = Color.Red
-            Button1.BackColor = Color.White
+            Button1.FlatAppearance.BorderColor = Color.Red
+            Label1.Text = "Update Required"
+            Label1.ForeColor = Color.Red
         Else
-            Button1.Text = "Up To Date"
-            Button1.ForeColor = Color.MediumSeaGreen
-            Button1.BackColor = Color.White
-            Button1.Enabled = False
+            Label1.Text = "Up To Date"
+            Label1.ForeColor = Color.MediumSeaGreen
+            Button1.Visible = False
         End If
 
     End Sub

@@ -18,6 +18,7 @@ Public Class AdmireUpdate
         arrRet(0).DelegateToRun = New admAdmireCustomModuleInterface.admICustomModule.CustomModuleMenuItemClick(AddressOf MenuItemOpenCollectorsClick)
         arrRet(0).Locations = New MenuLocation() {MenuLocation.MainMenu}
         arrRet(0).Text = "Updates|Run Admire Update"
+        arrRet(0).Text.ForeColor = Color.Red
         Return arrRet
     End Function
 
